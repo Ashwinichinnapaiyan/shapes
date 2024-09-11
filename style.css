@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #529aec;
+    padding: 20px;
+    width: 800px;
+    margin: 50px auto;
+    height: 250px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations on Shapes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="circle.png" alt="Circle" id="circle" onclick="calculateCircle()">
+    <img src="square.png" alt="Square" id="square" onclick="calculateSquare()">
+    <img src="cylinder.png" alt="Cylinder" id="cylinder" onclick="calculateCylinder()">
+    <img src="simple interest.png" alt="Simple Interest" id="interest" onclick="calculateInterest()">
+    <img src="alphabet.png" alt="Alphabet" id="alphabet" onclick="alphabetFunction()">
+</div>
+
+<script>
+    function calculateCircle()
+    {
+        const pi=3.14
+        let rad= prompt('Enter the radius of the circle');
+        let ans = pi*rad*rad;
+        console.log('area of the circle:',ans)
+        alert("The area of the circle is:${ans}");
+    }
+
+    function calculateSquare() 
+    { 
+        let a= prompt('Enter the side of the square');
+        let res = a*a;
+        console.log('area of the square:',res)
+        alert("The area of the square is: ${res}");
+        
+    }
+
+    function calculateCylinder() 
+    {
+        const pi=3.14
+        let rad= prompt('Enter the radius of the cylinder base');
+        let height = prompt('Enter the height of the cylinder');
+        let volume = pi*rad*rad* height;
+        console.log('volume of the cylinder:',volume)
+        alert("The volume of the cylinder is: ${volume}");
+    }
+
+    function calculateInterest() 
+    {
+        let principal = prompt('Enter the principal amount');
+        let rate = prompt('Enter the rate of interest (in %)');
+        let tenure = prompt('Enter the tenure (in month)');
+        let interest = (principal * rate * tenure) / 100;
+        console.log('Interest of the amount:',interest)
+        alert("The simple interest is: ${interest}");
+    }
+
+    function alphabetFunction() 
+    {
+        let alpha=prompt('Type a alphabet word')
+        console.log('It is alphabet word:',alphabet)
+        alert('You clicked on the Alphabet picture.');
+    }
+</script>
+
+</body>
+</html>
